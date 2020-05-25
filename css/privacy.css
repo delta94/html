@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+header {
+    background-color: rgba(0,0,0,.6);
+}
+
+main {
+	padding: 200px 0;
+}
+
+main .h2-ttl {
+	font-size: 2.4rem;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	margin-bottom: 80px;
+}
+main .h2-ttl:after {
+	content: "";
+	display: inline-block;
+	width: 55px;
+	height: 4px;
+	background-color: #1c2020;
+	position: absolute;
+	bottom: -17px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+main .h2-ttl span {
+	font-weight: bold;
+	display: block;
+	font-size: 1.2rem;
+}
+main .lead {
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+
+/* privacy-area */
+main .privacy-area dl {
+	margin-bottom: 40px;
+}
+main .privacy-area dl:last-child {
+	margin-bottom: 0px;
+}
+main .privacy-area dt,
+main .privacy-area dd {
+	line-height: 1.6;
+}
+main .privacy-area dt {
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+main .privacy-area dd {
+	margin-bottom: 10px;
+}
+main .privacy-area li {
+	margin-bottom: 5px;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+main .privacy-area ul li:before {
+	content: "・";
+}
+main .privacy-area ul ,
+main .privacy-area ol {
+	margin-top: 20px;
+	padding-left: 20px;
+}
+main .privacy-area dd:last-child ,
+main .privacy-area li:last-child {
+	margin-bottom: 0;
+}
+
+
+/* ====================================================================================
+         SP
+  ==================================================================================== */
+@media screen and (max-width: 767px) {
+	main {
+		padding: 100px 0;
+	}
+	
+	main .h2-ttl {
+		font-size: 1.6rem;
+		margin-bottom: 40px;
+		line-height: 1.8;
+	}
+	main .h2-ttl:after {
+		width: 30px;
+		height: 2px;
+		bottom: -10px;
+	}
+	
+	main .lead {
+		font-size: 1.4rem;
+		margin-bottom: 30px;
+	}
+	
+/* privacy-area */		
+	main .privacy-area dl {
+		margin-bottom: 20px;
+	}
+	main .privacy-area dt {
+		margin-bottom: 5px;
+	}
+	main .privacy-area dd a {
+		display: inline;
+	}
+}
+
+
+
+/* ====================================================================================
+         ipad
+  ==================================================================================== */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {	
+	main {
+		padding: 120px 0;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	main {
+		padding: 160px 0;
+	}
+}
+
+

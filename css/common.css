@@ -1,0 +1,705 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* =====================
+  Base
+===================== */
+@font-face {
+  font-family: YuGothic;
+  src: url("../assets/fonts/YuGothR.ttc");
+}
+@font-face {
+  font-family: YuGothic-Bold;
+  src: url("../assets/fonts/YuGothB.ttc");
+}
+@font-face {
+  font-family: YuGothic-Medium;
+  src: url("../assets/fonts/YuGothM.ttc");
+}
+@font-face {
+  font-family: YuGothic-Light;
+  src: url("../assets/fonts/YuGothL.ttc");
+}
+body {
+  color: #1c2020;
+  font-size: 1.6rem;
+  background-color: #fff;
+}
+body,
+a,
+dd,
+div,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+label,
+li,
+p,
+span,
+td,
+th {
+  font-family: "游ゴシック", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+    "Hiragino Kaku Gothic Pro", "メイリオ", "ＭＳ ゴシック", sans-serif;
+  line-height: 1.6;
+  font-weight: 500;
+}
+main {
+  overflow: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  color: #1c2020;
+  backface-visibility: hidden;
+}
+a:visit,
+a:link {
+  text-decoration: none;
+}
+a img {
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+  color: #1c2020;
+}
+a:visited {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1120px;
+}
+/* scroll bar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background: #1c2020;
+  border-radius: 10px;
+}
+::-moz-selection {
+  background-color: aliceblue;
+  text-shadow: none;
+}
+::selection {
+  background-color: aliceblue;
+  text-shadow: none;
+}
+.text-link {
+  color: #cfa972 !important;
+  text-decoration: underline;
+}
+.en {
+  font-family: "Roboto Condensed", sans-serif;
+}
+.sp {
+  display: none !important;
+}
+
+/* =====================
+  汎用クラス
+===================== */
+/* btn */
+a.btn {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  background-color: #000;
+  max-width: 314px;
+  padding: 15px;
+  letter-spacing: 0.1em;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+a.btn::after {
+  /*background-color: #f00;*/
+  height: 100%;
+  left: -35%;
+  top: 0;
+  transform: skew(50deg);
+  transition-duration: 0.6s;
+  transform-origin: top left;
+  width: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+
+  content: "";
+  position: absolute;
+  z-index: 1;
+}
+a.btn span {
+  position: relative;
+  z-index: 2;
+}
+a.btn:hover {
+  color: #333;
+  opacity: 1;
+}
+a.btn:hover:after {
+  height: 100%;
+  background: #fff;
+  width: 135%;
+}
+/*a.blank:after {
+	position: relative;
+	content: url(../images/common/icon_blank.png);
+	right: -10px;
+	top: -1px;
+}*/
+
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.bold {
+  font-weight: bold;
+}
+
+/* scroll */
+.mv-area .scroll {
+  position: absolute;
+  bottom: 30px;
+  right: 55px;
+  z-index: 40;
+  width: 20px;
+  height: 240px;
+  transform: translate(-50%, 0);
+  color: #fff;
+}
+.mv-area .scroll span.text {
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 0.2em;
+  transform: rotate(90deg) translate(50%, 24px);
+  display: inline-block;
+}
+.mv-area .scroll span.arrow {
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  margin-left: 1px;
+}
+.mv-area .scroll span.arrow::before {
+  content: url("../images/common/icon_scroll.png");
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  -webkit-animation: sdb 2s infinite;
+  animation: sdb 2s infinite;
+}
+@-webkit-keyframes sdb {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sdb {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 20px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+/* bnr */
+footer .bnr a,
+.use-area .bnr a,
+.mv-area .bnr a {
+  position: relative;
+  cursor: inherit;
+  opacity: 1 !important;
+}
+footer .bnr a:after,
+.use-area .bnr a:after,
+.mv-area .bnr a:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  z-index: 2;
+}
+footer .bnr img,
+.use-area .bnr img,
+.mv-area .bnr img {
+  opacity: 0.4;
+}
+footer .bnr p,
+.use-area .bnr p,
+.mv-area .bnr p {
+  text-align: left !important;
+  padding: 0 !important;
+  border: none !important;
+  font-size: 1.4rem !important;
+}
+.use-area .bnr {
+  display: inline-block;
+}
+.use-area .bnr p {
+  text-align: center !important;
+  margin-top: 0 !important;
+}
+
+/* =====================
+  use-area
+===================== */
+main .use-area {
+  padding: 120px 0 100px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+main .use-area p {
+  color: #fff;
+  font-size: 5rem;
+  line-height: 1.8;
+  font-weight: bold;
+}
+main .use-area div p {
+  margin-top: 20px;
+  font-size: 4rem;
+}
+main .use-area .bnr {
+  margin-top: 20px;
+}
+main .use-area .bnr a:nth-child(1) img {
+  height: 60px;
+  margin-right: 30px;
+}
+main .use-area .bnr a:nth-child(2) img {
+  height: 84px;
+  margin-right: -10px;
+}
+
+/* =====================
+  footer
+===================== */
+footer {
+  background-color: #1c2020;
+  padding-top: 95px;
+}
+footer a,
+footer li,
+footer p {
+  color: #fff !important;
+}
+footer .logo {
+  margin-bottom: 40px;
+}
+footer .bnr {
+  float: left;
+  /*max-width: 135px;*/
+  max-width: 135px;
+  margin-right: 100px;
+  text-align: center;
+}
+footer .bnr p {
+  margin-top: 10px !important;
+  font-size: 1.1rem !important;
+}
+footer .bnr a {
+  width: 100%;
+}
+footer .bnr a:first-child {
+  margin-bottom: 14px;
+}
+
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+}
+footer ul:nth-child(1) li:nth-child(2) {
+  display: block !important;
+}
+footer ul:nth-child(2) {
+  max-width: 500px;
+}
+footer ul li {
+  display: inline-block;
+  margin-right: 40px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  position: relative;
+}
+footer ul li:before {
+  content: "";
+  display: inline-block;
+  width: 7px;
+  height: 2px;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -1px;
+}
+footer ul li a {
+  font-weight: bold;
+  position: relative;
+  right: 0;
+}
+footer ul li a:hover {
+  right: -5px;
+}
+footer ul li.ttl {
+  font-size: 2.2rem;
+  margin-right: 120px;
+}
+
+footer p {
+  margin-top: 40px;
+  border-top: 1px solid #fff;
+  padding: 40px 0;
+  font-size: 1.4rem;
+  text-align: right;
+}
+
+/* =====================
+  pegeTop
+===================== */
+.pagetop {
+  display: none;
+}
+.pagetop a {
+  position: fixed;
+  bottom: 60px;
+  right: 60px;
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #fff;
+  background-color: #1c2020;
+  text-align: center;
+}
+.pagetop a span {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-top: 1px solid #fff;
+  border-right: 1px solid #fff;
+  -webkit-transform: rotate(315deg);
+  transform: rotate(315deg);
+  margin-top: 22px;
+  transition: 0.3s ease-in-out;
+}
+.pagetop a:hover span {
+  margin-top: 19px;
+}
+
+/* =====================
+  404
+===================== */
+.notfound main {
+  padding: 300px 0 160px 0;
+  text-align: center;
+}
+.notfound main h2 {
+  margin-bottom: 100px;
+}
+.notfound main p {
+  margin-bottom: 60px;
+}
+.notfound main a {
+  display: inline-block;
+  border: 1px solid #000;
+}
+
+/* ====================================================================================
+         SP時
+  ==================================================================================== */
+@media screen and (max-width: 767px) {
+  /* =====================
+  Base
+===================== */
+  body {
+    font-size: 1.4rem;
+  }
+  body,
+  a,
+  dd,
+  div,
+  dt,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  html,
+  label,
+  li,
+  p,
+  span,
+  td,
+  th {
+    line-height: 1.4;
+  }
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+
+  /* =====================
+  汎用クラス
+===================== */
+  /* btn */
+  a.btn {
+    font-size: 1.4rem;
+  }
+  a.btn span {
+    font-size: 1.4rem;
+  }
+  .inner-responsive {
+    overflow-x: scroll;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+  }
+  .left,
+  .right {
+    float: none;
+  }
+
+  /* scroll */
+  .mv-area .scroll {
+    bottom: 20px;
+    right: 10px;
+    width: 15px;
+    height: 180px;
+  }
+  .mv-area .scroll span.text {
+    font-size: 1.2rem;
+  }
+  .mv-area .scroll span.arrow {
+    top: 80px;
+  }
+  .mv-area .scroll span.arrow::before {
+    content: "";
+    background-image: url("../images/common/icon_scroll.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 10px;
+    height: 60px;
+    top: 0;
+  }
+
+  /* =====================
+  use-area
+===================== */
+  main .use-area {
+    padding: 60px 20px;
+  }
+  main .use-area p {
+    font-size: 2rem;
+  }
+  main .use-area div p {
+    margin-top: 20px;
+    font-size: 1.4rem;
+  }
+  main .use-area .bnr {
+    margin-top: 0px;
+  }
+  main .use-area .bnr a:nth-child(1) img {
+    height: 38px;
+    margin-right: 0px;
+  }
+  main .use-area .bnr a:nth-child(2) img {
+    height: 54px;
+  }
+
+  /* =====================
+  footer
+===================== */
+  footer {
+    padding-top: 40px;
+  }
+  footer .logo {
+    max-width: 130px;
+    margin-bottom: 30px;
+  }
+  footer .bnr {
+    display: inline-block;
+    float: none;
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  footer .bnr a {
+    width: auto;
+  }
+  footer .bnr a:first-child {
+    margin-bottom: 0;
+    margin-right: 2%;
+  }
+  footer .bnr a:nth-child(1) img {
+    height: 40px;
+  }
+  footer .bnr a:nth-child(2) img {
+    height: 58px;
+  }
+
+  footer ul li {
+    width: 100%;
+    margin-right: 0;
+    line-height: 1.8;
+  }
+  footer ul li a {
+    font-weight: 400;
+  }
+  footer ul li.ttl {
+    font-size: 1.6rem;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  footer p {
+    margin-top: 30px;
+    padding: 20px 0;
+    font-size: 1.2rem;
+  }
+
+  /* =====================
+  pegeTop
+===================== */
+  .pagetop a {
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    bottom: 40px;
+  }
+  .pagetop a span {
+    width: 7px;
+    height: 7px;
+    margin-top: 18px;
+  }
+
+  /* =====================
+  404
+===================== */
+  .notfound main {
+    padding: 120px 20px 80px 20px;
+  }
+  .notfound main h2 {
+    margin-bottom: 30px;
+  }
+  .notfound main p {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .container {
+    padding: 0 20px !important;
+    max-width: 100%;
+  }
+  .container-inner {
+    padding: 0 20px;
+    max-width: 100%;
+  }
+}
+
+/* ====================================================================================
+         ipad
+  ==================================================================================== */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .pc {
+    display: none !important;
+  }
+  .sp {
+    display: block !important;
+  }
+
+  /* =====================
+  use-area
+===================== */
+  main .use-area {
+    padding: 60px 20px;
+  }
+  main .use-area p {
+    font-size: 3.6rem;
+  }
+  main .use-area div p {
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+  main .use-area .bnr {
+    margin-top: 0px;
+  }
+
+  /* =====================
+  footer
+===================== */
+  footer {
+    padding-top: 60px;
+  }
+  footer .bnr {
+    margin-right: 40px;
+  }
+  footer ul li.ttl {
+    font-size: 2rem;
+    margin-right: 30px;
+  }
+  footer ul li {
+    margin-right: 20px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  /* =====================
+  use-area
+===================== */
+  main .use-area {
+    padding: 80px 20px;
+  }
+  main .use-area p {
+    font-size: 3.6rem;
+  }
+  main .use-area div p {
+    margin-top: 30px;
+    font-size: 2.2rem;
+  }
+}

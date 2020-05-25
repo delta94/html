@@ -1,0 +1,282 @@
+@charset "UTF-8";
+
+header {
+    background-color: rgba(0,0,0,.6);
+}
+main .h2-ttl {
+	font-size: 2.4rem;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	margin-bottom: 50px;
+}
+main .h2-ttl:after {
+	content: "";
+	display: inline-block;
+	width: 55px;
+	height: 4px;
+	background-color: #1c2020;
+	position: absolute;
+	bottom: -17px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+main .h2-ttl span {
+	font-weight: bold;
+	display: block;
+	font-size: 1.2rem;
+}
+main .lead {
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+
+/* mission-area */
+main .mission-area {
+	margin-top: 190px;
+	text-align: center;
+}
+main .mission-area h2 {
+	margin-bottom: 100px;
+}
+main .mission-area img {
+	margin-bottom: 90px;
+}
+main .mission-area p {
+	line-height: 2;
+}
+
+/* message-area */
+main .message-area {
+	margin-top: 100px;
+    background: linear-gradient(#fff 0%,#fff 40%,#eee 40%,#eee 100%);
+	padding-bottom: 100px;
+}
+main .message-area h2 {
+	margin-bottom: 80px;
+}
+main .message-area .img-wrap {
+	position: relative;
+	margin-bottom: 80px;
+}
+main .message-area .text {
+	position: absolute;
+	top: 45%;
+	left: 100px;
+	text-align: left;
+}
+main .message-area .text h3 {
+	font-size: 3.4rem;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+main .message-area .text p {
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+}
+main .message-area p {
+	padding: 0 10%;
+	margin-bottom: 20px;
+}
+main .message-area p:last-child {
+	margin-bottom: 0px;
+}
+
+/* company-area */
+main .company-area {
+	padding: 90px 0 120px;
+}
+main .company-area dl {
+	border-bottom: 1px solid #dddede;
+	margin-bottom: 30px;
+}
+main .company-area dl dt {
+	max-width: 120px;
+	width: 100%;
+	display: inline-block;
+	background-color: #1c2020;
+	padding: 10px 0;
+	margin-right: 40px;
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+}
+main .company-area dl dd {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+
+/* ====================================================================================
+         SP
+  ==================================================================================== */
+@media screen and (max-width: 767px) {
+	main .h2-ttl {
+		font-size: 1.6rem;
+		margin-bottom: 40px;
+		line-height: 1.8;
+	}
+	main .h2-ttl:after {
+		width: 30px;
+		height: 2px;
+		bottom: -10px;
+	}
+	main .lead {
+		font-size: 1.4rem;
+		margin-bottom: 40px;
+	}
+
+	
+/* mission-area */
+	main .mission-area {
+		margin-top: 80px;
+	}
+	main .mission-area h2 {
+		margin-bottom: 40px;
+	}
+	main .mission-area img {
+		max-width: 60%;
+		margin-bottom: 30px;
+	}
+	main .mission-area .lead {
+		margin-bottom: 20px;
+		line-height: 1.6;
+	}
+
+/* message-area */
+	main .message-area {
+		margin-top: 40px;
+		background: linear-gradient(#fff 0%,#fff 20%,#eee 20%,#eee 100%);
+		padding-bottom: 40px;
+	}
+	main .message-area h2 {
+		margin-bottom: 40px;
+	}
+	main .message-area .img-wrap {
+		margin-bottom: 30px;
+	}
+	main .message-area .text {
+		top: inherit;
+		bottom: 20px;
+		left: 10px;
+	}
+	main .message-area .text h3 {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+	main .message-area .text p {
+		font-weight: 500;
+		font-size: 1.2rem;
+	}
+	main .message-area p {
+		padding: 0 20px;
+		margin-bottom: 20px;
+	}
+
+/* company-area */
+	main .company-area {
+		border-top: none;
+		padding-top: 40px!important;
+		margin-bottom: 40px;
+	}
+	main .company-area .h2-ttl {
+		margin-bottom: 30px;
+	}
+	main .company-area dl dt {
+		max-width: 100%;
+		padding: 10px;
+		margin-right: 0;
+		margin-bottom: 15px;
+		text-align: left;
+	}
+	main .company-area dl dd {
+		width: 100%;
+		margin-bottom: 15px;
+	}
+}
+
+
+
+/* ====================================================================================
+         ipad
+  ==================================================================================== */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {	
+	main .lead {
+		font-size: 2rem;
+	}
+	main .company-area .h2-ttl {
+		margin-bottom: 50px;
+	}
+	
+	main .mission-area h2 {
+		margin-bottom: 80px;
+	}
+	main .mission-area img {
+		max-width: 70%;
+		margin-bottom: 60px;
+	}
+	
+	main .message-area {
+		background: linear-gradient(#fff 0%,#fff 30%,#eee 30%,#eee 100%);
+	}
+	main .message-area .img-wrap {
+		margin: 0 auto 40px auto;
+		max-width: 80%;
+	}
+	main .message-area .text {
+		top: inherit;
+		bottom: 40px;
+		left: 20px;
+	}
+	main .message-area .text h3 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+	
+	main .company-area {
+		padding-top: 60px!important;
+		padding-bottom: 40px!important;
+	}
+	main .company-area dl dt {
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	main .lead {
+		font-size: 2rem;
+	}
+	
+	main .mission-area img {
+		max-width: 60%;
+		margin-bottom: 60px;
+	}
+	main .mission-area .lead {
+		margin-bottom: 30px;
+	}
+	
+	main .message-area .img-wrap {
+		margin: 0 auto 60px auto;
+		max-width: 70%;
+	}
+	main .message-area .text {
+		top: inherit;
+		bottom: 40px;
+		left: 20px;
+	}
+	main .message-area .text h3 {
+		font-size: 2rem;
+		margin-bottom: 10px;
+	}
+
+	main .company-area {
+		padding-top: 60px!important;
+		padding-bottom: 40px!important;
+	}
+}
+
+

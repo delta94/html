@@ -1,0 +1,37 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="44.5px" height="67.5px">
+<defs>
+<filter id="Filter_0">
+    <feFlood flood-color="rgb(37, 143, 107)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+<filter id="Filter_1">
+    <feFlood flood-color="rgb(136, 179, 60)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+<filter id="Filter_2">
+    <feFlood flood-color="rgb(136, 179, 60)" flood-opacity="1" result="floodOut" />
+    <feComposite operator="atop" in="floodOut" in2="SourceGraphic" result="compOut" />
+    <feBlend mode="normal" in="compOut" in2="SourceGraphic" />
+</filter>
+
+</defs>
+<g filter="url(#Filter_0)">
+<g filter="url(#Filter_1)">
+<path fill-rule="evenodd"  stroke="rgb(255, 0, 0)" stroke-width="3px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+ d="M29.478,3.924 C29.478,3.924 7.226,12.214 6.079,13.046 C4.932,13.878 3.952,13.731 3.952,19.887 C3.952,26.044 3.952,56.373 3.952,56.373 C3.952,56.373 9.509,62.139 11.397,62.074 C13.532,62.000 36.923,51.812 36.923,51.812 C36.923,51.812 38.981,51.462 39.050,49.532 C39.119,47.601 39.050,11.906 39.050,11.906 C39.050,11.906 39.110,10.055 36.923,10.765 C34.763,11.467 12.461,19.887 12.461,19.887 L7.143,15.326 M12.461,15.326 L32.669,7.345 "/>
+</g>
+<path fill="none" stroke="rgb(255, 0, 0)" stroke-width="3px" stroke-linecap="round" stroke-linejoin="round"
+ d="M29.478,3.924 C29.478,3.924 7.226,12.214 6.079,13.046 C4.932,13.878 3.952,13.731 3.952,19.887 C3.952,26.044 3.952,56.373 3.952,56.373 C3.952,56.373 9.509,62.139 11.397,62.074 C13.532,62.000 36.923,51.812 36.923,51.812 C36.923,51.812 38.981,51.462 39.050,49.532 C39.119,47.601 39.050,11.906 39.050,11.906 C39.050,11.906 39.110,10.055 36.923,10.765 C34.763,11.467 12.461,19.887 12.461,19.887 L7.143,15.326 M12.461,15.326 L32.669,7.345 "/>
+<g filter="url(#Filter_2)">
+<path fill-rule="evenodd"  stroke="rgb(255, 0, 0)" stroke-width="3px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+ d="M19.468,43.555 L24.113,28.444 L29.532,40.533 M22.564,38.266 L26.435,36.755 "/>
+</g>
+<path fill="none" stroke="rgb(255, 0, 0)" stroke-width="3px" stroke-linecap="round" stroke-linejoin="round"
+ d="M19.468,43.555 L24.113,28.444 L29.532,40.533 M22.564,38.266 L26.435,36.755 "/>
+</g>
+</svg>

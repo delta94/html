@@ -1,0 +1,274 @@
+@charset "UTF-8";
+
+header {
+    background-color: rgba(0,0,0,.6);
+}
+
+main {
+	padding: 200px 0;
+}
+
+main .h2-ttl {
+	font-size: 2.4rem;
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+	margin-bottom: 80px;
+}
+main .h2-ttl:after {
+	content: "";
+	display: inline-block;
+	width: 55px;
+	height: 4px;
+	background-color: #1c2020;
+	position: absolute;
+	bottom: -17px;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+main .h2-ttl span {
+	font-weight: bold;
+	display: block;
+	font-size: 1.2rem;
+}
+main .lead {
+	font-size: 2.4rem;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+main p {
+	text-align: center;
+}
+
+
+/* contact-area */
+main .contact-area form#mailformpro {
+    margin-top: 60px;
+}
+main .contact-area form#mailformpro dl dt {
+    width: 25%;
+    font-size: 1.6rem;
+    padding: 26px 0 26px 5%;
+    text-align: left;
+    background-color: #fff;
+}
+main .contact-area .red {
+   color: #E71E21;
+}
+main .contact-area form#mailformpro dl dd {
+    width: 75%;
+    padding: 20px 0;
+    font-size: 1.6rem;
+    float: left;
+    background-color: #fff;
+}
+main .contact-area form#mailformpro dl dd textarea {
+    width: 75%!important;
+    height: 200px!important;
+}
+main .contact-area form#mailformpro .mfp_buttons {
+	padding-top: 60px;
+    border-top: solid 1px #CCC;
+}
+.mfp_element_text, .mfp_element_number, .mfp_element_select-one, .mfp_element_email, .mfp_element_tel, .mfp_element_textarea, .mfp_element_date, .mfp_element_password {
+    box-shadow: none;
+    width: 50%;
+}
+.mfp_element_submit, 
+.mfp_element_reset,
+.mfp_element_button,
+button.mfp_next,
+button.mfp_prev {
+	font-size: 1.6rem;
+    padding: 15px 0;
+    border: 1px solid #1c2020;
+    width: 320px;
+    text-shadow: none!important;
+	border-radius: 0;	
+    background: none!important;
+	background-color: #fff!important;
+    transition: 0.3s ease-in-out;
+}
+.mfp_element_submit:hover, 
+.mfp_element_reset:hover,
+.mfp_element_button:hover,
+button.mfp_next:hover,
+button.mfp_prev:hover {
+	box-shadow: none;
+	background-color: #1c2020!important;
+    color: #fff;
+}
+
+/* confirm */
+.confirm-none {
+	display: none;	
+}
+div#mfp_phase_confirm h4 {
+    font-size: 1.6rem;
+    padding: 10px 0px 60px 0px;
+}
+table#mfp_confirm_table {
+    border-bottom: solid 1px #CCC;
+}
+table#mfp_confirm_table tr {
+    background-color: #fff!important;
+}
+table#mfp_confirm_table tr th {
+	float: left;
+    width: 25%;
+    font-size: 1.6rem;
+    padding: 20px 0 20px 5%;
+    text-align: left;
+    background-color: #fff;
+}
+table#mfp_confirm_table tr td {
+    width: 75%;
+    padding: 20px 0;
+    font-size: 1.6rem;
+    float: left;
+    background-color: #fff;
+}
+table#mfp_confirm_table {
+    margin-bottom: 60px;
+}
+div.mfp_buttons button:nth-child(2) {
+    margin-left: 20px;
+}
+
+/* thanks */
+.thanks {
+	margin-top: 60px;
+}
+.thanks a {
+	margin: 0 auto;
+	border: 1px solid #000;
+}
+
+
+/* ====================================================================================
+         SP
+  ==================================================================================== */
+@media screen and (max-width: 767px) {
+	main {
+		padding: 100px 0 60px;
+	}
+	
+	main .h2-ttl {
+		font-size: 1.6rem;
+		margin-bottom: 40px;
+		line-height: 1.8;
+	}
+	main .h2-ttl:after {
+		width: 30px;
+		height: 2px;
+		bottom: -10px;
+	}
+	main p {
+		text-align: left;
+	}
+	
+/* contact-area */
+	main .contact-area form#mailformpro {
+		margin-top: 40px;
+	}
+	main .contact-area form#mailformpro dl dt {
+		width: 100%;
+		font-size: 1.4rem;
+		padding: 20px 0 10px 0;
+	}
+	main .contact-area form#mailformpro dl dd {
+		width: 100%;
+		padding: 0 0 20px 0;
+		font-size: 1.4rem;
+	}
+	main .contact-area form#mailformpro dl dd textarea {
+		width: 100%!important;
+		height: 100px!important;
+	}
+	main .contact-area form#mailformpro .mfp_buttons {
+		padding-top: 40px;
+	}
+	.mfp_element_text, .mfp_element_number, .mfp_element_select-one, .mfp_element_email, .mfp_element_tel, .mfp_element_textarea, .mfp_element_date, .mfp_element_password {
+		width: 100%;
+		max-width: 100%;
+	}
+	.mfp_element_submit, 
+	.mfp_element_reset,
+	.mfp_element_button,
+	button.mfp_next,
+	button.mfp_prev {
+		font-size: 1.4rem;
+		width: 260px;
+	}
+
+/* confirm */
+	div#mfp_phase_confirm h4 {
+		font-size: 1.4rem;
+		padding: 0 0px 40px 0px;
+	}
+	table#mfp_confirm_table tr th {
+		width: 100%;
+		font-size: 1.4rem;
+		padding: 20px 0 10px 0;
+	}
+	table#mfp_confirm_table tr td {
+		border-top: none;
+		width: 100%;
+		padding: 0 0 20px 0;
+		font-size: 1.4rem;
+	}
+	table#mfp_confirm_table {
+		margin-bottom: 40px;
+	}
+	div.mfp_buttons button:nth-child(2) {
+		margin-left: 0;
+		margin-top: 10px;
+	}
+
+
+}
+
+
+
+/* ====================================================================================
+         ipad
+  ==================================================================================== */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {	
+	main {
+		padding: 120px 0;
+	}
+	
+/* contact-area */
+	main .contact-area form#mailformpro {
+		margin-top: 40px;
+	}
+	main .contact-area form#mailformpro dl dt {
+		width: 100%;
+		padding: 20px 0 10px 0;
+	}
+	main .contact-area form#mailformpro dl dd {
+		width: 100%;
+		padding: 0 0 20px 0;
+	}
+	main .contact-area form#mailformpro .mfp_buttons {
+		padding-top: 40px;
+	}
+	.mfp_element_text, .mfp_element_number, .mfp_element_select-one, .mfp_element_email, .mfp_element_tel, .mfp_element_textarea, .mfp_element_date, .mfp_element_password {
+		width: 70%;
+		max-width: 100%;
+	}
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	main {
+		padding: 160px 0;
+	}
+	main .contact-area form#mailformpro dl dd textarea {
+		height: 140px!important;
+	}
+
+}
+
+

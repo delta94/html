@@ -1,0 +1,996 @@
+@charset "UTF-8";
+
+main .h2-ttl:after {
+    background-color: #c7ef28;
+}
+
+/* mv-area */
+main .mv-area {
+	background-image: url("../images/carry/img_mv.jpg");
+	background-size: cover;
+	/*text-align: center;*/
+}
+main .mv-area .text-wrap {
+	top: 55%;
+}
+main .mv-area .text-wrap h2 img {
+	width: 39.5vw;
+    margin-bottom: 60px;
+}
+/*main .mv-area .text-wrap {
+	width: 100%;
+	top: 67%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+}
+main .mv-area .text-wrap h2 img {
+	width: 58vw;
+    margin-bottom: 60px;
+}
+main .mv-area .text-wrap p {
+    font-size: 2.4rem;
+	font-weight: bold;
+    margin-bottom: 40px;
+}
+main .mv-area .text-wrap .bnr {
+    display: inline-block;
+}
+.mv-area .bnr p {
+	text-align: center!important;
+}
+*/
+
+/* message-area */
+main .message-area {
+	padding: 140px 0;
+}
+main .message-area h2 {
+	margin-bottom: 80px;
+}
+main .message-area p {
+	font-size: 4rem;
+	font-weight: bold;
+	margin-bottom: 60px;
+}
+main .message-area p:last-child {
+	margin-bottom: 0;
+}
+main .message-area p span {
+	display: inline-block;
+	font-weight: bold;
+	position: relative;
+}
+main .message-area p span:after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 16px;
+	background-color: #c7ef28 ;
+	display: inline-block;
+	left: 0;
+	bottom: 10px;
+	z-index: -1;
+}
+
+/* about-area */
+main .about-area {
+	padding-top: 110px;
+	background-color: #eee;
+}
+main .about-area p {
+	text-align: left;
+	margin-bottom: 50px;
+}
+main .about-area p:last-child {
+	margin-bottom: 80px;
+}
+main .about-area .map {
+    background-color: transparent;
+    padding: 0 0 90px 0;
+	position: relative;
+}
+main .about-area .map img {
+	position: relative;
+	z-index: 1;
+}
+main .about-area .map:after {
+	content: "";
+    background-color: #1c2020;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 88%;
+	width: 100%;
+}
+
+/* service-area */
+main .service-area {
+	padding-top: 100px;
+	text-align: center;
+	margin-bottom: 100px;
+}
+main .service-area p.lead {
+	margin-bottom: 10px;
+}
+main .service-area ul {
+	max-width: 990px;
+	margin: 90px auto 0 auto;
+}
+main .service-area ul li {
+	float: left;
+	vertical-align: top;
+	position: relative;
+}
+main .service-area ul li:after {
+    content: url(../images/carry/icon_plus.png);
+    position: absolute;
+    right: -100px;
+    top: 40%;
+}
+main .service-area ul li:last-child:after {
+	display: none;
+}
+main .service-area ul li:nth-child(2) {
+    padding-top: 35px;
+    margin: 0 15.5%;
+}
+main .service-area ul li:nth-child(3) {
+	margin-top: 55px;
+}
+main .service-area ul li p {
+	margin-top: 30px;
+	font-size: 2rem;
+	font-weight: bold;
+}
+main .service-area ul li:nth-child(2) p {
+	margin-top: 46px;
+}
+main .service-area ul li:nth-child(3) p {
+	margin-top: 40px;
+}
+
+/* flow-area */
+main .flow-area {
+	margin-bottom: 100px;
+}
+main .flow-area h2 {
+	margin-bottom: 60px;
+}
+main .flow-area li {
+	float: left;
+    width: 30%;
+	margin-right: 5%;
+    position: relative;
+	vertical-align: top;
+}
+main .flow-area li:last-child {
+	margin-right: 0;
+}
+main .flow-area li:after {
+    content: url(../images/carry/icon_arrow_g.png);
+    position: absolute;
+    right: -55px;
+    top: 35%;
+}
+main .flow-area li:last-child:after {
+	display: none;
+}
+main .flow-area li img {
+	max-width: 340px;
+}
+main .flow-area li dt {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: bold;
+	margin: 30px 0 20px;
+	background-color: #1c2020;
+	padding: 15px 0;
+	color: #fff;
+}
+main .flow-area li dd {
+	text-align: left;
+}
+
+/* matches-area */
+main .matches-area {
+	text-align: center;
+	margin-bottom: 100px;
+}
+main .matches-area ul {
+	min-height: 680px;
+	background-color: #1c2020;
+	overflow: hidden;
+}
+main .matches-area ul li {
+	padding-top: 80px;
+	display: inline-block;
+	float: left;
+	width: 33.333%;
+	color: #fff;
+	position: relative;
+}
+main .matches-area ul li:after {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 700px;
+    position: absolute;
+    right: -35px;
+    top: -10px;
+    transform: rotate(7deg);
+    background-color: #fff;
+}
+main .matches-area ul li:last-child:after {
+    display: none;
+}
+main .matches-area ul li img {
+	display: block;
+	margin: 0 auto;
+}
+main .matches-area ul li p {
+	margin: 40px auto 0 auto;
+	border-top: 4px solid #fff;
+	padding-top: 40px;
+	max-width: 340px;
+	font-size: 2rem;
+}
+
+/* driver-area */
+main .driver-area {
+	text-align: center;
+}
+main .driver-area .driver {
+	background: linear-gradient(#fff 0%,#fff 30%,#eee 30%,#eee 100%);
+	padding-bottom: 100px;
+}
+main .driver-area ul li {
+	display: inline-block;
+    float: left;
+    margin-right: 9%;
+    width: 27%;
+}
+main .driver-area ul li:nth-child(3n) {
+	margin-right: 0;
+}
+
+/* faq-area */
+main .faq-area {
+	padding-top: 100px;
+	text-align: center;
+	margin-bottom: 60px;
+}
+main .faq-area dl {
+	margin-bottom: 20px;
+}
+main .faq-area dl:last-child {
+	margin-bottom: 0;
+}
+main .faq-area dt {
+	padding: 20px 100px;
+	position: relative;
+    transition: 0.5s;
+}
+main .faq-area dd {
+	padding: 40px 100px;
+}
+main .faq-area dl span.text {
+	display: inline-block;
+	padding-left: 1em;
+	text-indent: -1em;
+}
+main .faq-area dl span.en {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 2.4rem;
+	margin-right: 20px;
+}
+main .faq-area dt span.en {
+	color: #1c2020;
+    transition: 0.5s;
+}
+main .faq-area dd span.en {
+    color: #c7ef28;
+}
+/* anime */
+main .faq-area dt:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	opacity: 0;
+	background-color: #1c2020;
+	transform-origin: right top;
+	transform: scale(0, 1);
+	transition: transform .8s;
+}
+main .faq-area dt.active:after {
+	transform-origin: left top;
+	transform: scale(1, 1);
+	opacity: 1;
+}
+main .faq-area dt.active ,
+main .faq-area dt.active span.en {
+	color: #fff;
+}
+
+/* area-area */
+main .area-area {
+	padding: 200px 0;
+	background-image: url("../images/carry/img_map.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	text-align: center;
+}
+main .area-area .text {
+	font-size: 2.6rem;
+}
+main .area-area .text p {
+	font-weight: bold;
+}
+main .area-area .text span {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 5rem;
+	padding: 0 10px;
+	margin: 0 10px;
+	position: relative;
+}
+main .area-area .text span:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background-color: #c7ef28;
+    display: inline-block;
+    left: 0;
+    bottom: 13px;
+    z-index: -1;
+}
+
+/*main .area-area {
+	margin-bottom: 100px;
+}
+main .area-area .wrap {
+	max-width: 860px;
+	margin: 0 auto;
+	position: relative;
+}
+main .area-area .text {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translate(0,-50%);
+}
+main .area-area .text p {
+	font-weight: bold;
+	font-size: 2.6rem;
+}
+main .area-area .text span {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 4rem;
+	padding: 0 5px;
+	margin: 0 5px 0 0;
+	position: relative;
+}
+main .area-area .text span:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 16px;
+    background-color: #c7ef28;
+    display: inline-block;
+    left: 0;
+    bottom: 8px;
+    z-index: -1;
+}
+main .area-area img {
+    float: right;
+}*/
+
+/* fare-area */
+main .fare-area {
+	margin-bottom: 100px;
+	text-align: center;
+}
+main .fare-area h2 {
+	margin-bottom: 70px;
+}
+main .fare-area .text {
+	display: inline-block;
+	padding: 60px;
+	background-color: #1c2020;
+	font-size: 3.2rem;
+	color: #fff;
+}
+main .fare-area .text .color {
+    color: #c7ef28;
+	font-size: 7.2rem;
+	margin-left: 10px;
+}
+main .fare-area .text span {
+	display: inline-block;
+    font-weight: bold;
+	font-size: 5.2rem;
+	line-height: 1;
+}
+
+/* use-area */
+main .use-area {
+	background-image: url("../images/carry/bg_carry.jpg");
+}
+
+@media screen and (max-width: 1120px) {
+	main .flow-area li img {
+		max-width: 100%;
+	}
+}
+
+/* ====================================================================================
+         SP
+  ==================================================================================== */
+@media screen and (max-width: 767px) {
+	
+/* mv-area */
+	main .mv-area .text-wrap h2 img {
+		width: 90%;
+		margin-bottom: 60px;
+	}
+	/*
+	main .mv-area .text-wrap {
+		top: 60%;
+	}
+	main .mv-area .text-wrap h2 img {
+		width: 90vw;
+		margin-bottom: 20px;
+	}
+	main .mv-area .text-wrap p {
+		padding: 0 10px;
+		font-size: 1.4rem;
+		margin-bottom: 10px;
+	}*/
+
+/* message-area */
+	main .message-area {
+		padding: 60px 20px!important;
+	}
+	main .message-area h2 {
+		margin-bottom: 30px;
+	}
+	main .message-area h2 img {
+		max-width: 50%;
+	}
+	main .message-area p {
+		font-size: 1.4rem;
+		margin-bottom: 20px;
+	}
+	main .message-area p span:after {
+		height: 8px;
+		bottom: 2px;
+	}
+
+/* about-area */
+	main .about-area {
+		padding-top: 60px;
+		padding-bottom: 0;
+	}
+	main .about-area p {
+		margin-bottom: 20px;
+	}
+	main .about-area p:last-child {
+		margin-bottom: 30px;
+	}
+	main .about-area .map {
+		padding: 0 20px 60px 20px;
+	}
+	
+/* service-area */
+	main .service-area {
+		padding-top: 60px;
+		margin-bottom: 0;
+	}
+	main .service-area p {
+		padding: 0 20px;
+		font-weight: bold;
+	}
+	main .service-area ul {
+		margin-top: 40px;
+	}
+	main .service-area ul li {
+		float: none;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		padding: 0 20px;
+	}
+	main .service-area ul li:after {
+		right: 50%;
+		top: inherit;
+		bottom: -70px;
+		transform: translate(50%, 0);
+	}
+	main .service-area ul li:nth-child(2) {
+		padding-top: 0;
+		margin: 100px 0;
+	}
+	main .service-area ul li:nth-child(3) {
+		margin-top: 0;
+	}
+	main .service-area ul li img {
+		max-width: 40%;
+	}
+	main .service-area ul li:nth-child(2) img {
+		max-width: 35%;
+	}
+	main .service-area ul li:nth-child(3) img {
+		max-width: 45%;
+	}
+	main .service-area ul li p {
+		margin-top: 0!important;
+		font-size: 1.8rem;
+	}
+
+/* flow-area */
+	main .flow-area {
+		padding: 80px 20px 0 20px!important;
+		margin-bottom: 0;
+	}
+	main .flow-area h2 {
+		margin-bottom: 0px;
+	}
+	main .flow-area li {
+		float: none;
+		width: 100%;
+		padding: 30px 0 60px 0px!important;
+		margin-bottom: 0;
+	}
+	main .flow-area li:after {
+		top: inherit;
+		bottom: 0;
+		right: 50%;
+		transform: rotate(90deg) translate(20%,-70%);
+	}
+	main .flow-area li dt {
+		margin-top: 20px;
+		font-size: 1.6rem;
+		padding: 10px 0;
+	}
+
+/* matches-area */
+	main .matches-area {
+		margin-bottom: 60px;
+	}
+	main .matches-area ul {
+		min-height: auto;
+	}
+	main .matches-area ul li {
+		padding: 40px 20px 40px 30px;
+		float: none;
+		width: 100%;
+		text-align: left;
+	}
+	main .matches-area ul li:after {
+		width: 100%;
+		height: 7px;
+		right: 0;
+		top: inherit;
+		bottom: 0;
+		transform: rotate(175deg);
+	}
+	main .matches-area ul li img {
+		display: inline-block;
+		max-width: 20%;
+	}
+	main .matches-area ul li p {
+		margin: 0;
+		border-top: none;
+		padding-top: 0;
+		max-width: none;
+		position: absolute;
+		left: 35%;
+		top: 50%;
+		transform: translate(0, -50%);
+		text-align: left;
+		font-size: 1.6rem;
+	}
+
+/* driver-area */
+	main .driver-area p.lead {
+		padding: 0 20px;
+	}
+
+/* faq-area */
+	main .faq-area {
+		padding-top: 40px!important;
+	}
+	main .faq-area dl {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+	main .faq-area dt {
+		padding: 15px 20px;
+	}
+	main .faq-area dd {
+		padding: 15px 20px;
+	}
+	main .faq-area dl span.en {
+		font-size: 1.8rem;
+		margin-right: 10px;
+	}
+
+/* area-area */
+	main .area-area {
+		padding: 60px 10px 80px 10px!important;
+	}
+	main .area-area .text {
+		font-size: 1.6rem;
+	}
+	main .area-area .text span {
+		font-size: 2rem;
+		padding: 0 5px;
+		margin: 0 5px;
+	}
+	main .area-area .text span:after {
+		height: 8px;
+		bottom: 2px;
+	}
+/*	main .area-area {
+		margin-bottom: 80px;
+	}
+	main .area-area .text p {
+		font-size: 1.4rem;
+	}
+	main .area-area .text span {
+		font-size: 2rem;
+		padding: 0 2px 0 5px;
+		margin: 0 5px 0 0;
+	}
+	main .area-area .text span:after {
+		height: 10px;
+		bottom: 2px;
+	}
+	main .area-area img {
+		max-width: 55%;
+	}
+*/
+	
+/* fare-area */
+	main .fare-area {
+		margin-bottom: 60px;
+	}
+	main .fare-area h2 {
+		margin-bottom: 40px;
+	}
+	main .fare-area .text {
+		padding: 30px 20px;
+		font-size: 1.4rem;
+	}
+	main .fare-area .text .color {
+		font-size: 3rem;
+		margin-left: 5px;
+	}
+	main .fare-area .text span {
+		font-size: 2rem;
+		margin-left: 5px;
+	}
+}
+
+
+
+/* ====================================================================================
+         ipad
+  ==================================================================================== */
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {	
+/* mv-area */
+	main .mv-area {
+		background-position: center;
+	}
+	main .mv-area .text-wrap h2 img {
+		width: 65vw;
+	}
+	/*main .mv-area .text-wrap {
+		top: 60%;
+	}
+	main .mv-area .text-wrap p {
+		display: block;
+		margin: 0 auto;
+		max-width: 560px;
+		padding: 0 20px;
+		font-size: 1.6rem;
+		margin-bottom: 40px;
+	}
+	main .mv-area .text-wrap p br {
+		display: none;
+	}*/
+	
+/* message-area */
+	main .message-area {
+		padding: 60px 20px!important;
+	}
+	main .message-area h2 {
+		margin-bottom: 50px;
+	}
+	main .message-area h2 img {
+		max-width: 40%;
+	}
+	main .message-area p {
+		font-size: 2.4rem;
+		margin-bottom: 30px;
+	}
+	main .message-area p span:after {
+		height: 15px;
+		bottom: 5px;
+	}
+	
+/* about-area */
+	main .about-area .map {
+		padding: 0 20px 60px 20px;
+	}
+	main .about-area .map img {
+		margin: 0 auto;
+		max-width: 60%;
+	}
+	
+/* service-area */
+	main .service-area {
+		margin-bottom: 50px;
+	}
+	main .service-area ul {
+		margin: 60px 20px 0 20px;
+	}
+	main .service-area ul li {
+		width: 26%;
+	}
+	main .service-area ul li img.pc {
+		display: block!important;
+	}
+	main .service-area ul li img.sp {
+		display: none!important;
+	}
+	main .service-area ul li:after {
+		top: 35%;
+	}
+	main .service-area ul li:nth-child(1):after {
+		right: -70px;
+	}
+	main .service-area ul li:nth-child(2):after {
+		right: -42px;
+	}
+	main .service-area ul li:nth-child(2) {
+		padding-top: 0;
+		margin: 0 10%;
+	}
+	main .service-area ul li:nth-child(3) {
+		margin-top: 40px;
+	}
+	main .service-area ul li:nth-child(2) p {
+		margin-top: 49px;
+	}
+	main .service-area ul li:nth-child(2) img {
+		max-width: 80%;
+		margin-left: 30px;
+	}
+	main .service-area ul li:nth-child(3) p {
+		margin-top: 65px;
+	}
+
+/* flow-area */
+	main .flow-area {
+		padding: 60px 20px 0px 20px!important;
+	}
+	main .flow-area li:after {
+		content: "";
+		background-image: url(../images/carry/icon_arrow_g.png);
+		display: inline-block;
+		width: 30px;
+		height: 26px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		right: -33px;
+		top: 70px;
+	}
+	main .flow-area li dt {
+		margin-bottom: 15px;
+	}	
+	
+/* matches-area */
+	main .matches-area ul li {
+		padding-top: 60px;
+	}
+	main .matches-area ul li:after {
+		width: 10px;
+		right: -20px;
+	}
+	main .matches-area ul li:nth-child(2) img {
+		margin-right: 40px;
+	}
+	main .matches-area ul li:nth-child(3) img {
+		margin-right: 30px;
+	}
+	main .matches-area ul li p {
+		max-width: 220px;
+		font-size: 1.6rem;
+	}	
+	main .matches-area ul li p br {
+		display: none!important;
+	}	
+	
+/* faq-area */
+	main .faq-area {
+		padding: 60px 0 40px 0 !important;
+	}
+	main .faq-area dl {
+		margin-bottom: 20px;
+		text-align: left;
+	}
+	
+/* area-area */
+	main .area-area {
+		padding: 60px 0 120px!important;
+	}
+	main .area-area .text {
+		font-size: 2.4rem;
+	}
+	main .area-area .text span {
+		font-size: 3.4rem;
+		padding: 0 5px;
+		margin: 0 5px;
+	}
+	main .area-area .text span:after {
+		height: 10px;
+		bottom: 5px;
+	}
+/*	main .area-area {
+		margin-bottom: 80px;
+	}
+	main .area-area .text {
+		left: 20px;
+	}
+	main .area-area .text p {
+		font-size: 2.4rem;
+	}
+*/
+	
+/* fare-area */
+	main .fare-area {
+		margin: 40px 0 80px;
+	}
+	main .fare-area .text {
+		padding: 30px 20px;
+		font-size: 2rem;
+	}
+	main .fare-area .text .color {
+		font-size: 3.6rem;
+	}
+	main .fare-area .text span {
+		font-size: 2.2rem;
+		margin-left: 5px;
+	}
+	
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+/* mv-area */
+	main .mv-area .text-wrap h2 img {
+		margin-bottom: 60px;
+	}
+	/*main .mv-area .text-wrap {
+		top: 60%;
+	}
+	main .mv-area .text-wrap h2 img {
+		width: 70vw;
+		margin-bottom: 60px;
+	}
+	main .mv-area .text-wrap p {
+		display: block;
+		margin: 0 auto;
+		max-width: 800px;
+		font-size: 1.6rem;
+	}*/
+	
+/* message-area */
+	main .message-area {
+		padding: 80px 40px!important;
+	}
+	main .message-area h2 {
+		margin-bottom: 50px;
+	}
+	main .message-area h2 img {
+		max-width: 30%;
+	}
+	main .message-area p {
+		font-size: 2rem;
+		margin-bottom: 30px;
+	}
+	main .message-area p span:after {
+		height: 10px;
+		bottom: 3px;
+	}
+	
+/* about-area */
+	main .about-area .map {
+		padding: 0 20px 60px 20px;
+	}
+	main .about-area .map img {
+		margin: 0 auto;
+		max-width: 80%;
+	}
+	
+/* flow-area */
+	main .flow-area {
+		padding: 0 20px!important;
+	}
+	main .flow-area li:after {
+		top: 33%;
+	}
+	main .flow-area li dt {
+		font-size: 1.8rem;
+		margin-bottom: 10px;
+	}	
+	
+/* matches-area */
+	main .matches-area .lead {
+		margin-bottom: 40px;
+	}
+	main .matches-area ul li p {
+		font-size: 1.8rem;
+	}	
+	
+/* faq-area */
+	main .faq-area {
+		padding-top: 100px!important;
+	}
+	
+/* area-area */
+	main .area-area {
+		padding: 100px 0 160px!important;
+	}
+	main .area-area .text {
+		font-size: 2.2rem;
+	}
+	main .area-area .text span {
+		font-size: 4rem;
+	}
+	main .area-area .text span:after {
+		height: 15px;
+		bottom: 8px;
+	}
+/*	main .area-area .text {
+		font-size: 2.2rem;
+	}
+	main .area-area .text span {
+		font-size: 4rem;
+	}
+	main .area-area .text span:after {
+		height: 15px;
+		bottom: 8px;
+	}
+*/
+	
+/* fare-area */
+	main .fare-area {
+		margin: 20px 0 80px;
+	}
+	main .fare-area .text {
+		padding: 40px 20px;
+		font-size: 2.2rem;
+	}
+	main .fare-area .text .color {
+		font-size: 4.6rem;
+	}
+	main .fare-area .text span {
+		font-size: 3.2rem;
+		margin-left: 5px;
+	}
+	
+	
+	
+}
+
+
